@@ -1,5 +1,5 @@
 spring:
   cloud:
     config:
-      name: eureka
+      name: eureka-peer1
       uri: http://localhost:3600

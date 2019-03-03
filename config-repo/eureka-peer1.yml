@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-server
+    name: eureka-server-peer1
   security:
     basic:
       enabled: true
@@ -9,14 +9,14 @@ spring:
       password: password123
 
 server:
-  port: 8762
+  port: 8761
   max-threads: 2000
   max-connections: 2000
 
 eureka:
   instance:
     hostname: localhost
-    appname: eureka-server-appname
+    appname: eureka-server-appname-1
   client:
     healthcheck:
       enabled: true
