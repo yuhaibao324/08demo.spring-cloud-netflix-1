@@ -2,8 +2,8 @@ spring:
   application:
     name: springcloud-eureka-server
   security:
-    basic:
-      enabled: false
+    #basic:
+      #enabled: false
     user:
       name: username123   #login username
       password: password123
