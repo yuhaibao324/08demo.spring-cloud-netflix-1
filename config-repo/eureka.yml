@@ -19,7 +19,7 @@ eureka:
     register-with-eureka: false #是否向注册中心注册自己
     fetch-registry: false
     service-url:
-      defaultZone: http://username123@password123@/${eureka.instance.hostname}:${server.port}/eureka #把Eureka注册到哪个Eureka
+      defaultZone: http://username123:password123@/${eureka.instance.hostname}:${server.port}/eureka #把Eureka注册到哪个Eureka
     instance:
       prefer-ip-address: true
 
