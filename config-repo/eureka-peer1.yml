@@ -24,7 +24,7 @@ eureka:
     #fetch-registry: true
     service-url:
       #defaultZone: http://username123:password123@localhost:8762/eureka #把Eureka注册到哪个Eureka
-      defaultZone: http://peer2:8762/eureka/ #把Eureka注册到哪个Eureka
+      defaultZone: http://peer1:8762/eureka/ #把Eureka注册到哪个Eureka
     #instance:
       #prefer-ip-address: true
       #instance-id:  ${spring.application.name}:${spring.application.instance_id:${server.port}}
