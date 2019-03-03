@@ -1,40 +1,13 @@
+#spring:
+#  cloud:
+#    config:
+#      name: eureka-peer1
+#      uri: http://localhost:3600
+
 spring:
   cloud:
     config:
       name: eureka-peer1
-      uri: http://localhost:3600
-
-spring:
-  application:
-    name: springcloud-eureka-server
-  #security:
-    #basic:
-      #enabled: false
-    #user:
-      #name: username123   #login username
-      #password: password123
-
-server:
-  port: 8761
-  max-threads: 2000
-  max-connections: 2000
-
-eureka:
-  instance:
-    hostname: peer1
-    #appname: eureka-server-appname-1
-  client:
-    healthcheck:
-      enabled: true
-    #register-with-eureka: true #是否向注册中心注册自己
-    #fetch-registry: true
-    service-url:
-      #defaultZone: http://username123:password123@localhost:8762/eureka #把Eureka注册到哪个Eureka
-      defaultZone: http://peer1:8761/eureka/ #把Eureka注册到哪个Eureka
-    #instance:
-      #prefer-ip-address: true
-      #instance-id:  ${spring.application.name}:${spring.application.instance_id:${server.port}}
-
-management:
-  security:
-    enabled: false
+      discovery:
+        enabled: true
+        serviceId: config-service
