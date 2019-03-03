@@ -3,7 +3,7 @@ spring:
     name: eureka-server-peer1
   security:
     basic:
-      enabled: true
+      enabled: false
     user:
       name: username123   #login username
       password: password123
