@@ -1,12 +1,12 @@
 spring:
   application:
     name: springcloud-eureka-server
-  security:
+  #security:
     #basic:
       #enabled: false
-    user:
-      name: username123   #login username
-      password: password123
+    #user:
+      #name: username123   #login username
+      #password: password123
 
 server:
   port: 8761
