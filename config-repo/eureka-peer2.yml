@@ -20,13 +20,13 @@ eureka:
   client:
     healthcheck:
       enabled: true
-    register-with-eureka: true #是否向注册中心注册自己
-    fetch-registry: true
+    #register-with-eureka: true #是否向注册中心注册自己
+    #fetch-registry: true
     service-url:
       defaultZone: http://username123:password123@${eureka.instance.hostname}:8761/eureka #把Eureka注册到哪个Eureka
-    instance:
-      prefer-ip-address: true
-      instance-id:  ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    #instance:
+      #prefer-ip-address: true
+      #instance-id:  ${spring.application.name}:${spring.application.instance_id:${server.port}}
 
 management:
   security:
