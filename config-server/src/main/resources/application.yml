@@ -10,5 +10,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yunTerry/spring-cloud-netflix
+          uri: https://github.com/yuhaibao324/08demo.spring-cloud-netflix-1
           search-paths: config-repo
