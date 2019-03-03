@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      name: eureka-peer2
+      uri: http://localhost:3600
