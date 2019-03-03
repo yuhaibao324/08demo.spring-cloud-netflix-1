@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.terry</groupId>
-    <artifactId>spring-boot-cloud</artifactId>
+    <artifactId>yunTerry-spring-boot-cloud</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
 
