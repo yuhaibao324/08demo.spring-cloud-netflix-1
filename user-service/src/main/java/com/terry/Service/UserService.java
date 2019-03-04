@@ -66,6 +66,14 @@ public class UserService {
         return back;
     }
 
+    public BaseResponse getUserList(String token) {
+        BaseResponse back = new BaseResponse();
+        back.code = 0;
+        back.msg = "success";
+        back.data = userRepository.findAll();
+        return back;
+    }
+
     public BaseResponse getUserInfo(String token) {
         BaseResponse back = new BaseResponse();
         String id = getUid(token);
@@ -74,14 +82,6 @@ public class UserService {
             back.code = 0;
             back.msg = "success";
         }
-        return back;
-    }
-
-    public BaseResponse getUserList(String token) {
-        BaseResponse back = new BaseResponse();
-        back.code = 0;
-        back.msg = "success";
-        back.data = userRepository.findAll();
         return back;
     }
 
